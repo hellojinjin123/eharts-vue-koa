@@ -4,7 +4,7 @@ module.exports = {
     rank: '地区销量排行',
     map: '商家分布',
     stock: '',
-    trend: '地区销量趋势',
+    trend: ['地区销量趋势','商家销量趋势', '商品销量趋势'],
     hotproduct: '热销商品占比',
     budget: '库存和销量分析'
   },

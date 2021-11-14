@@ -13,3 +13,9 @@ export function getRank() {
     method: 'get'
   })
 }
+export function getTrend() {
+  return request({
+    url: '/trend.json',
+    method: 'get'
+  })
+}

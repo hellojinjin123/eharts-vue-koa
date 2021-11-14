@@ -40,6 +40,7 @@ export default {
   },
   destroyed() {
     clearInterval(this.timer)
+    window.removeEventListener('resize', this.adaptChart)
   },
   methods: {
     initChart() {
@@ -84,7 +85,7 @@ export default {
             },
             itemStyle: {
               color: function(arg) {
-                console.log(arg);
+                // console.log(arg);
                 if (arg.data < 100) {
                   return {
                     x: 0,
